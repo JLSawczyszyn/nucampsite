@@ -8,12 +8,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!--Javascript and Jquery Head tag-->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -24,7 +29,7 @@
         <div class="container">
             <div class="col-4 col-sm-3 col-md-2 align-self-center">
                 <a href="index.html"><img src="img/logo.png" class="img-fluid" /></a>
-             </div>
+            </div>
             <div class="row">
                 <div class="col">
                     <h1>NuCamp</h1>
@@ -34,20 +39,33 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
 
-        <ul class="navbar-nav">
-            <li class="active">
-                <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="aboutus.html" class="nav-link">About Us</a>
-            </li>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" /></a>
+            <button class="collapsed navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contact Us</a>
-            </li>
-        </ul>
+            <div class="collapse navbar-collapse" id="nucampNavBar">
+                <ul class="navbar-nav">
+                    <li class="active">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutus.html" class="nav-link">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login</a>
+                </span>
+            </div>
         </div>
     </nav>
 
@@ -90,19 +108,22 @@
                     <div class="form-group row">
                         <label for="firstName" class="col-md-2 col-form-label">First Name</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                            <input type="text" class="form-control" id="firstName" name="firstName"
+                                placeholder="First Name" />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                            <input type="text" class="form-control" id="lastName" name="lastName"
+                                placeholder="Last Name" />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
                         <div class="col-5 col-md-3">
-                            <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                            <input type="tel" class="form-control" id="areaCode" name="areaCode"
+                                placeholder="Area code" />
                         </div>
                         <div class="col-7">
                             <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
@@ -118,11 +139,13 @@
                         <div class="col offset-md-2">
                             May we contact you?
                             <div class="form-check form-check-inline">
-                           <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios"
+                                    value="yes" />
                                 <label for="contactYes" class="form-check-label">Yes</label>
                             </div>
                             <div class="form-check form-check-inline">
-                           <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios"
+                                    value="no" />
                                 <label for="contactNo" class="form-check-label">No</label>
                             </div>
                         </div>
@@ -168,8 +191,10 @@
                             class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
+                        1-206-555-1234</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i
+                            class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
                 </div>
             </div>
         </div>
