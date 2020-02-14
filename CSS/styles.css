@@ -1,11 +1,11 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    background: rgb(57,66,203);
-    background: linear-gradient(90deg, rgba(57,66,203,1) 55%, rgba(94,19,112,1) 100%);
+    font-family: "Merriweather", sans-serif;
+    background: rgb(85,55,220);
+    background: linear-gradient(90deg, rgba(51,69,199,1) 50%, rgba(95,17,108,1) 100%);
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
+    font-family: "Merriweather", sans-serif;
 }
 
 h2 {
@@ -17,14 +17,14 @@ header h2 {
 }
 
 .site-footer{
-    background-image: linear-gradient(#b7a8f8, white);
+    background-image: linear-gradient(to right, #b7a8f8, white);
     padding: 20px 0px;
 }
 
 .jumbotron {
     margin:0;
     padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    background-image: linear-gradient(to right, #3046C5, #60106B);
     color: white;
 }
 
@@ -34,8 +34,36 @@ header h2 {
     min-height: 200px;
 }
 
-.navbar {
-    background-color: #901CAD;
+.nav-item::after{
+    content:'';
+    display:block;
+    width:0px;
+    height:4px;
+    background:#a83da3;
+    transition: 0.2s;
+    margin-top:-10px;
+}
+
+.nav-item:hover::after{width:100%;}
+
+
+.nav-link{padding:15px 5px;transition:0.2s;}
+
+.navbar-nav .nav-link {
+    
+    color:#000;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.navbar-nav .active > .nav-link{
+  
+    width:100%;
+    height:51px;
+    
+  border-bottom: .25rem solid transparent;
+  border-bottom-color: #a83da3;
+   
 }
 
 .carousel-caption {
@@ -43,14 +71,14 @@ header h2 {
 }
 
 .carousel {
-    border: solid #5637DD;
+    border: solid #cdc4fc;
 }
 
 .text-caption {
     background-color: #cec8ff;
 }
 
-    .searchbar{
+.searchbar{
     margin-bottom: auto;
     margin-top: auto;
     height: 60px;
@@ -59,7 +87,7 @@ header h2 {
     padding: 10px;
     }
 
-    .search_input{
+.search_input{
     color: white;
     border: 0;
     outline: 0;
@@ -70,19 +98,19 @@ header h2 {
     transition: width 0.4s linear;
     }
 
-    .searchbar:hover > .search_input{
+.searchbar:hover > .search_input{
     padding: 0 10px;
     width: 450px;
     caret-color:#901cad;
     transition: width 0.4s linear;
     }
 
-    .searchbar:hover > .search_icon{
+.searchbar:hover > .search_icon{
     background: white;
     color: #901cad;
     }
 
-    .search_icon{
+.search_icon{
     height: 40px;
     width: 40px;
     float: right;
@@ -94,8 +122,186 @@ header h2 {
     text-decoration:none;
     }
 
-    ::placeholder { 
+::placeholder { 
         color: white;
         opacity: 1;
       }
-      
+
+.card-color {
+    background-color: #b7a8f8;
+}
+
+body{
+    background-color: #25274d;
+}
+.contact{
+    padding: 4%;
+}
+.col-md-3{
+    background: white;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+.col-md-9{
+    background-image: linear-gradient(to right, #b7a8f8, white);;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #5f116c;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+
+.img-size{
+    width: 50%;
+    height: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+/* Gradient Header Styling ************************************************** */
+#gradient-header {
+    background: linear-gradient(110deg, #7C99B4, #161B33);
+}
+#gradient-footer {
+    background: linear-gradient(110deg, white, white);
+}
+
+/* Defining Font Families *************************************************** */
+.f-prime {
+    font-family: 'merriweather', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.f-second, .f-third {
+    font-family: 'merriweather', sans-serif;
+    font-weight: normal;
+}
+
+/* Defining Font Sizing ***************************************************** */
+.large {
+    font-size: 2.5rem;
+}
+.med {
+    font-size: 2rem;
+}
+.sml {
+    font-size: 1.5rem;
+}
+
+/* Defining Font Colors ***************************************************** */
+.primes {
+    color: indigo;
+}
+.seconds {
+    color: #4C5C68;
+}
+.thirds {
+    color: #A0B9BF;
+}
+
+/* Card Styling ************************************************************* */
+.card {
+    background-color:transparent;
+    border: 0px;
+}
+.card .thumbnail {
+    background-color:transparent;
+    border: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.card .thumbnail .caption {
+    background-image: linear-gradient(to right,  #b7a8f8, white);
+    margin: -20px 20px 20px 20px;
+    padding: 19px 29px 19px 29px;
+    position: relative;
+    border: 0px;
+}
+.card .thumbnail .caption hr {
+    border-top: 1px solid rgba(233, 18, 18, 0.25);
+    margin: 20px 40px;
+}
+.card .thumbnail .caption p {
+    font-weight: bolder;
+    font-size: 0.8rem;
+    color: #5f116d;
+}
+.card .thumbnail .caption .btn-card {
+    background-color: transparent;
+    border: 1px solid #5f116d;
+    font-weight: normal;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.25rem 1.25rem;
+    color: #5f116d;
+    transition: 0.5s ease;
+    border-radius: 0px;
+}
+.card .thumbnail .caption .btn-card:hover {
+    background-color: rgba(20, 5, 151, 0.1);
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.card .thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+/* ************************************************************************** */
+
+.card-white{
+    background-image: linear-gradient(to right, #b7a8f8, white);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#accordion .panel-heading { padding: 0;}
+#accordion .panel-title > a {
+	display: block;
+	padding: 0.4em 0.6em;
+    outline: none;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+#accordion .panel-title > a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::before  {
+    content:"\e113";
+    float: left;
+    font-family: 'Glyphicons Halflings';
+	margin-right :1em;
+}
+#accordion .panel-title > a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::before  {
+    content:"\e114";
+}
+
+.navbar-background{
+    background:#5c1573;
+   
+}
+
