@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/styles.old.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  
 
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
@@ -36,19 +37,19 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col col-md-4 col-xl-2">
-                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                        data-target="#reservemodal">Reserve Campsite</button>
+                    <button type="button" class="btn btn-primary"
+                        id="reserveButton">Reserve Campsite</button>
                 </div>
             </div>
         </div>
     </header>
 
 
-    <div id="reservemodal" class="modal fade" role="dialog">
+    <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info">
-                    <h3 class="text-white modal-title">Reserve Campsite</h3>
+                <div class="modal-header">
+                    <h3 class="modal-title">Reserve Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -123,7 +124,7 @@
                                 class="fa fa-address-card fa-lg"></i>Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginButton">
                         <i class="fa fa-sign-in"></i> Login</a>
                 </span>
             </div>
